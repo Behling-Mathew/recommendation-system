@@ -154,13 +154,11 @@ const RecommendationCard = () => {
                 </HeadingContainer>
                 <ImageContainer>
                   {thumbnail && (
-                    <FadeIn visible={visible} transitionDuration={50}>
-                      <ItemImage
-                        style={{ visibility: visible ? "visible" : "hidden" }}
-                        src={thumbnail}
-                        alt={`${title} cover art`}
-                      ></ItemImage>
-                    </FadeIn>
+                    <ItemImage
+                      style={{ visibility: visible ? "visible" : "hidden" }}
+                      src={thumbnail}
+                      alt={`${title} cover art`}
+                    ></ItemImage>
                   )}
                 </ImageContainer>
                 <RightContainer
