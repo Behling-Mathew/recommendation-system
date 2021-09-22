@@ -26,8 +26,20 @@ export const BackgroundLayerOne = styled.div`
     max-width: 100%;
     border: none;
     box-shadow: unset;
+    transform: unset;
+    top: 170px;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (max-height: 1080px) {
+    transform: scale(0.8) translate(-60%, -55%);
+  }
+
+  @media screen and (max-width: 900px), screen and (max-height: 700px) {
+    top: 100px;
   }
 `
+
 export const BackgroundLayerTwo = styled.div`
   border: 1px solid #909a9d;
   position: relative;
