@@ -27,19 +27,24 @@ export const BackgroundLayerOne = styled.div`
     border: none;
     box-shadow: unset;
     transform: unset;
-    top: 170px;
+    top: 50px;
+    margin-top: 200px;
     transform: translate(-50%, -50%);
   }
 
   @media screen and (max-height: 1080px) {
-    transform: scale(0.8) translate(-60%, -55%);
+    transform: scale(0.8) translate(-60%, -70%);
+    margin-top: 100px;
   }
 
-  @media screen and (max-width: 900px), screen and (max-height: 700px) {
-    top: 100px;
+  @media screen and (max-width: 900px) and (max-height: 1080px) {
+    margin-top: 270px;
+  }
+
+  @media screen and (max-width: 600px) and (max-height: 1080px) {
+    margin-top: 270px;
   }
 `
-
 export const BackgroundLayerTwo = styled.div`
   border: 1px solid #909a9d;
   position: relative;
@@ -85,11 +90,7 @@ export const Container = styled.div`
     box-shadow: unset;
     right: unset;
     bottom: unset;
-    margin-top: 300px;
-  }
-
-  @media screen and (max-width: 600px) {
-    margin-top: 600px;
+    margin-top: 850px;
   }
 `
 export const HeadingContainer = styled.div`
